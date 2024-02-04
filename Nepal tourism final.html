@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nepal Tourism</title>
+<meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Document</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+<style>
+
+.container{
+
+  max-width: auto;
+
+  margin: auto;
+
+  display: grid;
+
+  justify-content: space-evenly;
+
+  grid-template-columns: 352px 352px 352px; 
+
+  grid-template-rows: 384px ;
+
+  grid-column-gap: 30px;
+
+  grid-row-gap: 30px;
+
+}
+
+
+
+
+.card{
+
+   border-radius: 5px;
+
+   position: relative;
+
+   box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.2);
+
+ }
+
+  
+
+ .card:hover {
+
+   opacity: 0.6;
+   transform: scale(1.1);
+
+ }
+
+  
+
+ .card-image{
+
+   height: 220px;
+
+   width: 352px;   
+
+   background-position: center;
+
+   background-size: cover;
+
+   background-repeat: no-repeat;
+
+   border-radius: 5px 5px 0 0;
+
+ }
+
+  
+
+ .image-1 {
+
+   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Pashupatinath_Temple-2020.jpg/1280px-Pashupatinath_Temple-2020.jpg");
+ }
+
+  
+
+ .image-2{
+
+   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Khumbutse.jpg/1280px-Khumbutse.jpg");
+ }
+
+  
+
+ .image-3{
+
+   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Kali_Gandaki_riverbed_in_Nepal%27s_Upper_Mustang.jpg/1920px-Kali_Gandaki_riverbed_in_Nepal%27s_Upper_Mustang.jpg");
+
+ }
+
+ .card-description {
+  font-size:10px;
+  padding: 0 10px;
+
+ }
+
+
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+.container{
+    grid-template-columns: auto; 
+    grid-template-rows: repeat(6, 220px);
+    grid-row-gap: 5px;}
+    
+    
+    .card-description p{
+    display:none;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+
+.container{
+ grid-template-columns: 50% 50%; 
+ grid-template-rows: repeat(3, auto);
+ grid-column-gap: 5px;
+ grid-row-gap: 5px;
+
+}
+
+}
+
+@media screen and (max-width: 576px){
+
+.container{
+    grid-template-columns: auto; 
+    grid-template-rows: repeat(6, 220px);
+    grid-row-gap: 5px;
+	}
+ }
+    .c
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background: #333;
+	text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+	text-align:center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li:not(:last-child)::after {
+    content: "|"; 
+    color: #fff; 
+    margin-left: 2px;
+	}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+	padding:10px 20px;
+	border:none;
+	
+}
+
+nav ul li a:hover {
+    background-color:white;
+	color:black;
+}
+#home {
+      position: center;
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://upload.wikimedia.org/wikipedia/commons/6/64/Chaine-annapurna.jpg); 
+      background-position: center;
+      animation: backgroundAnimation 30s infinite; 
+    }
+
+    @keyframes backgroundAnimation {
+      0% {
+        background-position: 0% 0%;
+      }
+      50% {
+        background-position: 100% 100%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    h1, p {
+      z-index: 1; 
+    }
+
+
+section {
+    padding: 20px 0;
+    text-align: center;
+}
+nav ul li.login {
+   
+}
+nav ul li.login a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li.login a:hover {
+    background-color: white;
+    color: #333;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+<!--Anil's css part-->
+ .grid-a{   
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 352px 352px 352px; 
+  grid-template-rows: 384px ;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+    }
+
+    .content-card2 {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      flex: 1 1 300px;
+    }
+
+    .content-card2 img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .content-card2 img:hover {
+      transform: scale(1.1);
+    }
+
+    .youtube-video {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      overflow: hidden;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .youtube-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+<!-- Suresh's css part-->
+	
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .image-grid {
+      display: grid;
+      justify-content: space-evenly;
+  grid-template-columns: 352px 352px 352px; 
+  grid-template-rows: 384px ;
+     grid-column-gap: 5px;
+  grid-row-gap:10px;
+   
+   }
+     .imagestyle:hover{
+
+  transform: rotateY(180deg);
+transition: width 0.5s ease-in 0s;
+    }
+
+    .grid-item {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.1);
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .grid-item .info {
+      padding: 20px;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 100%;
+      height: 100%;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+    }
+	.contentc{
+	background:grey;
+	text-align:center;
+	opacity:0.6;
+	color:white;
+	}
+</style>
+
+<header>
+    <nav>
+        <ul>
+		<li class="login"><a href="#">Login</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#culture">Culture</a></li>
+            <li><a href="#plan-trip">Plan Your Trip</a></li>
+            <li><a href="#contact">Contact</a></li>
+			
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <h1 class="animate__animated animate__flipInX">Welcome to Nepal Tourism</h1>
+    <p>Explore the beauty and culture of Nepal.</p>
+</section>
+
+<section id="destinations">
+    <h2>Popular Destinations</h2>
+	<br>
+	<br>
+	<br>
+    <div class="container">
+
+    <div class="card">
+
+      <div class="card-image image-1">
+
+
+
+      </div>
+
+      <div class="card-description">
+
+        <h1> <a href="https://en.wikipedia.org/wiki/Pashupatinath_Temple#/media/File:Pashupatinath_Temple-2020.jpg"> Pashupatinath Temple </a> </h1>
+
+        <p> The Pashupatinath Temple (Nepali: पशुपतिनाथ मन्दिर) is a Hindu temple dedicated to Pashupati, a form of Shiva, and is located in Kathmandu, Nepal near the Bagmati River. This temple was classified as a World Heritage Site in 1979. This "extensive Hindu temple precinct" is a "sprawling collection of temples, ashrams, images and inscriptions raised over the centuries along the banks of the sacred Bagmati river", and is one of seven monument groups in UNESCO's designation of Kathmandu Valley.</p>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <div class="card-image image-2">
+
+
+
+      </div>
+
+      <div class="card-description">
+
+        <h1> <a href="https://en.wikipedia.org/wiki/Mount_Everest"> Mount Everest </a></h1>
+
+        <p> Mount Everest (Nepali: सगरमाथा) is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. The China–Nepal border runs across its summit point. Its elevation of 8,848.86 m was most recently established in 2020 by the Chinese and Nepali authorities. Mount Everest attracts many climbers, including highly experienced mountaineers. There are two main climbing routes, one approaching the summit from the southeast in Nepal (known as the "standard route") and the other from the north in Tibet.</p>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <div class="card-image image-3">
+
+
+
+      </div>
+
+      <div class="card-description">
+
+        <h1> <a href="https://en.wikipedia.org/wiki/Mustang_District"> Mustang District<a></h1>
+
+        <p>Mustang was an ancient kingdom, bordered by the Tibetan Plateau and sheltered by some of world's tallest peaks, including 8000-meter tall Annapurna and Dhaulagiri. Strict regulations of tourists here have aided in maintaining Tibetan traditions.Upper Mustang was a restricted area until 1992, which makes it one of the most preserved regions in the world. The name "Mustang" is derived from the Tibetan word meaning, "Plain of Aspiration." Upper Mustang was only opened to foreigners in 1992. It is a popular area for trekking and can be visited year round.</p>
+		  
+
+      </div>
+
+    </div>
+<lb>
+    
+</section>
+ <!-- Anil html part-->
+<section id="culture">
+    
+	  <h1> CULTURE </h1>
+		
+    <div class="grid-a">
+    <div class="content-card2">
+      <h2>Traditional Attire</h2>
+      <img src="https://thumbs.dreamstime.com/z/nepalese-dancers-traditional-nepali-attire-kathmandu-nepal-feb-magar-samaj-program-kathmandu-nepal-87777543.jpg" alt="Traditional Attire">
+      <p>Nepali traditional attire varies across regions and ethnic groups. The clothing is often vibrant, reflecting the cultural diversity of the country. Women might wear sarees, gunyus, or fariya skirts, adorned with intricate patterns and embroidery. Men often wear a daura suruwal, a long shirt with a closed-neck, complemented by a dhaka topi or a cap. The traditional attire holds great significance during cultural events, festivals, and ceremonies, symbolizing the rich heritage of Nepal.
+      </p>
+    </div>
+
+    <div class="content-card2">
+      <h2>Customs and Rituals</h2>
+      <img src="https://www.holidify.com/images/cmsuploads/compressed/janku_20180702120310.jpg" alt="Customs and Rituals">
+      <p>Nepali culture is deeply rooted in customs and rituals that are passed down through generations. Birth ceremonies, weddings, and funeral rites hold significant importance. Festivals like Indra Jatra involve elaborate processions and traditional dances, showcasing the religious and cultural beliefs of the people. Customs such as respecting elders, performing daily rituals (puja), and celebrating traditional festivals contribute to the rich tapestry of Nepali life.
+      </p>
+    </div>
+
+    <div class="content-card2">
+      <h2>Dashain</h2>
+      <img src="https://data.tibettravel.org/assets/images/nepal/nepal-festival/dashain-jamara.jpg" alt="Dashain Festival">
+      <p>Dashain is the longest and the most significant festival celebrated in Nepal. It marks the victory of the goddess Durga over the demon Mahishasura. Families come together, and elders apply tika (a mixture of yogurt, rice, and vermillion) on the foreheads of the younger members, imparting blessings and protection. The festival also involves the exchange of gifts, feasting, and the flying of kites. Dashain reflects the cultural and spiritual unity of the Nepali people.</p>
+    </div>
+
+    <div class="content-card2">
+      <h2>Tihar</h2>
+      <img src="https://www.authenticindiatours.com/app/uploads/2023/07/Highlights-of-Nepal-Holiday-Package-Tihar-Festival-Five-day-festival-of-lights-1400x550-c-default.jpg" alt="Tihar Festival">
+      <p>Tihar, also known as Deepawali, is a festival of lights celebrated with great enthusiasm. It spans five days and honors various animals, including crows, dogs, cows, and oxen. Each day is dedicated to different animals, symbolizing the bond between humans and nature. The festival is marked by colorful rangoli, oil lamps, and the decoration of homes. Tihar showcases the reverence for nature and the importance of coexistence in Nepali culture.
+      </p>
+    </div>
+    <div class="content-card2">
+      <h2>Dal Bhat</h2>
+      <img src="https://www.chefsoraya.com/cdn/shop/articles/Chef_Soraya_Blog_Image_Template_1600x.png" alt="Dal Bhat">
+      <p>Dal Bhat is a staple traditional meal in Nepali cuisine, consisting of lentil soup (dal) and rice (bhat). It is often served with a variety of side dishes, including vegetables, pickles, and sometimes meat or fish. This nutritious and wholesome meal is not only a source of sustenance but also a symbol of hospitality in Nepali households. The preparation and consumption of Dal Bhat reflect the cultural significance of communal dining and the importance of a balanced diet.
+      </p>
+    </div>
+
+    <div class="content-card2">
+      <h2>Momo</h2>
+      <img src="https://everestmomoshack.com/wp-content/uploads/201
+
+9/10/4-20190822LRPhoto_web-4-1.jpg" alt="Momo">
+      <p>Momo, a type of dumpling, is a popular street food in Nepal. These delicious dumplings are typically filled with minced meat (such as buffalo, chicken, or goat), vegetables, and a blend of spices. Momo is often steamed or fried and served with a tangy dipping sauce. This savory delight has gained international acclaim and is loved for its flavorful taste. Momo stalls and restaurants are common sights in Nepali cities, offering a quick and delightful culinary experience.
+      </p>
+    </div>
+
+
+  </section>
+
+  <section>
+    <h2>Nepali Music</h2>
+    <div class="youtube-video">
+      <iframe src="https://www.youtube.com/embed/1tW-h3GTE7E?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+</section>
+
+<!-- Suresh's html part-->
+<section id="plan-trip">
+    <h2>Plan Your Trip</h2>
+    
+	
+	<h1>Nepal: Tourist Areas</h1>
+
+  <div class="image-grid">
+   
+    <div class="grid-item">
+      <img class="imagestyle" src="https://picknepal.com/wp-content/uploads/2020/06/Rara-Lake-1.jpg" alt="Rara Lake">
+      <div class="info">
+        <h2>Rara Lake</h2>
+        <p>Explore the pristine beauty of Rara Lake.</p>
+      </div>
+    </div>
+
+
+    <div class="grid-item">
+      <img class="imagestyle" src="https://media2.thrillophilia.com/images/photos/000/110/282/original/1614339202_shutterstock_583070629.jpg?w=1400&h=320&dpr=1.0.jpg" alt="Adventure in Nepal">
+      <div class="info">
+        <h2>Pokhara Nepal</h2>
+        <p>Experience thrilling adventures in the Himalayas.</p>
+      </div>
+    </div>
+
+   
+    <div class="grid-item">
+      <img class="rotateY imagestyle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Boudhanath_Stupa-IMG_7048.jpg/1024px-Boudhanath_Stupa-IMG_7048.jpg" alt="Boudhanath Stupa">
+      <div class="info">
+        <h2>Boudhanath Stupa</h2>
+        <p>Visit the iconic Boudhanath Stupa in Kathmandu.</p>
+      </div>
+    </div>
+
+  
+    <div class="grid-item">
+      <img class="rotateY imagestyle" src="https://www.visionadventurenepal.com/assets/images/bungy-jump-01.jpg" alt="Bungee Jumping in Nepal">
+      <div class="info">
+        <h2>Bungee Jumping</h2>
+        <p>Feel the adrenaline with bungee jumping in Nepal.</p>
+      </div>
+    </div>
+
+
+    <div class="grid-item">
+      <img class="imagestyle" src="https://www.nestadventure.com/wp-content/uploads/2019/08/Helambu-Trek.jpg" alt="Helambu Trek">
+      <div class="info">
+        <h2>Helambu Trek</h2>
+        <p>Embark on a beautiful trek in the Helambu region.</p>
+      </div>
+    </div>
+
+    
+    <div class="grid-item">
+      <img class="imagestyle" src="https://images.squarespace-cdn.com/content/v1/53ecd1bde4b0
+
+a6f9524254f8/1472358833783-VKFGBCUL4DSWQY3HVCS9/Best-of-Nepal-Tour.jpg?format=1500w.jpg" alt="Best of Nepal Tour">
+      <div class="info">
+        <h2>Chitwan National park</h2>
+        <p>Discover the best of Nepal with a curated tour experience.</p>
+      </div>
+    </div>
+
+    
+  </div>
+	  
+</section>
+<section id="contact">
+    <h2>Contact Us</h2>
+	<div class="contentc">
+	<ol>
+           Anil Saru <a href="mailto:anilsarumagar7@gmail.com"> send email </a> <br>
+           Pawan Kumar Thapa <a href="mailto:Pk.thapa1922@gmail.com"> send email</a> <br>
+           Suresh Sunar <a href="mailto:anmolsuresh101@gmail.com">send email </a> <br>
+           Sudip Regmi <a href="mailto:belardsudip@gmail.com" > send email </a> <br>
+		   </ol>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Nepal Tourism</p>
+</footer>
+
+</body>
+</html>
